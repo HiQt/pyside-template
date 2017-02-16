@@ -1,5 +1,5 @@
-from PySide.QtGui import QMainWindow, QDialog
-from ui.MainWindow import Ui_MainWindow
+from PySide.QtGui import QMainWindow, QIcon
+from ui.MainWindow_ui import Ui_MainWindow
 from dlg_about import DlgAbout
 from app_info import APP_INFO
 
@@ -11,6 +11,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.setupUi(self)
 
         self.setWindowTitle(APP_INFO.APP_NAME)
+        self.setWindowIcon(QIcon(":/icons/icon.ico"))
 
         self.actionAbout.triggered.connect(self.actionAbout_triggered)
 

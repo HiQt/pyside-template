@@ -1,5 +1,5 @@
 from PySide.QtGui import QWidget
-from ui.SomeWidget import Ui_Form
+from ui.SomeWidget_ui import Ui_Form
 
 
 class SomeWidget(QWidget, Ui_Form):
