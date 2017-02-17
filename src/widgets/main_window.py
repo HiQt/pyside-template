@@ -1,6 +1,5 @@
 from PySide import QtGui
 from ui.MainWindow_ui import Ui_MainWindow
-from dlg_about import DlgAbout
 from app_info import APP_INFO
 
 
